@@ -1,8 +1,10 @@
 package Tree;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
-public class tree {
+public class All_Traversal_Recursion {
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
@@ -19,9 +21,33 @@ public class tree {
         System.out.println();
         System.out.print("Inorder traversal of binary tree is= ");
         inOrderTraversal(root);
-    }
+        System.out.println();
+        System.out.print("Levelorder traversal of binary tree is= ");
 
-    private static void inOrderTraversal(Node root) {
+        //level Order
+        Queue<Node> queue = new LinkedList<Node>();
+        List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
+        if(root == null){
+            System.out.print(wrapList);
+        }
+        queue.offer(root);
+        while(!queue.isEmpty()) {
+            int levelNum = queue.size();
+            List<Integer> subList = new LinkedList<Integer>();
+            for(int i=0;i<levelNum;i++){
+                if(queue.peek().left != null){
+                    queue.offer(queue.peek().left);
+                }
+                if(queue.peek().right != null){
+                    queue.offer(queue.peek().right);
+                }
+                subList.add(queue.poll().data);
+            }
+            wrapList.add(subList);
+        }
+        System.out.print(wrapList);
+    }
+    private static void inOrderTraversal(Node root) {  //Left-Root-Right
         if (root != null) {
             // Traverse left subtree
             inOrderTraversal(root.left);
@@ -32,7 +58,7 @@ public class tree {
         }
     }
 
-    private static void postOrderTraversal(Node root) {
+    private static void postOrderTraversal(Node root) { // Left-Right-Root
         if (root != null) {
             // Traverse left subtree
             postOrderTraversal(root.left);
@@ -43,7 +69,7 @@ public class tree {
         }
     }
 
-    private static void preOrderTraversal(Node root) {
+    private static void preOrderTraversal(Node root) { // Root-Left-Right
         if (root != null) {
             // Visit the node
             System.out.print(root.data + " ");
@@ -52,15 +78,5 @@ public class tree {
             // Traverse right subtree
             preOrderTraversal(root.right);
         }
-    }
-}
-
-class Node {
-    int data;
-    Node left;
-    Node right;
-
-    public Node(int data) {
-        this.data = data;
     }
 }
