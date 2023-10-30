@@ -10,13 +10,9 @@ public class Method {
         p=insert(arr,p,40);
         p=insert(arr,p,50);
         print(arr,p);
-        System.out.println();
-        Object a;
-        update(arr,p,20,60);
-        System.out.print("Update array:");
+        p=delete(arr,p,30);
         print(arr,p);
-        p=delete(arr,p,60);
-        print(arr,p);
+
     }
 
     private static int delete(int[] arr,  int p, int value){

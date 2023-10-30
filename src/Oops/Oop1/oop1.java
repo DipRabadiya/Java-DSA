@@ -27,18 +27,21 @@ public class oop1 {
 
 class Shape {
     public void area(){
+
         System.out.println("Display area");
     }
 }
 
 class Triangle extends Shape {
     public void area(int l, int h) {
+
         System.out.println((l*h)/2);
     }
 }
 
 class EquilateralTriangle extends Triangle {
-    public void area(int l,int h){
+    public void area(int l,int h)
+    {
         System.out.println((l*h)/2);
     }
 }
