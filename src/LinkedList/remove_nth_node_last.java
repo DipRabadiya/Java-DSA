@@ -217,6 +217,9 @@ public class remove_nth_node_last {
         list.addLast(1);
         list.printList();
 
+        list.head=list.reverseRecursive(list.head);
+        list.printList();
+        list.printList();
         list.removeNthFromEnd(3);
         list.printList();
         System.out.println(list.isPalindrome());

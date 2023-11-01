@@ -138,7 +138,9 @@ public class Reverse_linklist {
         list.addLast(4);
         list.printList();
 
-        list.reverseIterate();
+        //list.reverseIterate();
+        //list.printList();
+        list.reverseRecursive(list.head);
         list.printList();
     }
 }
