@@ -220,7 +220,7 @@ public class remove_nth_node_last {
         list.head=list.reverseRecursive(list.head);
         list.printList();
         list.printList();
-        list.removeNthFromEnd(3);
+        list.removeNthFromEnd(5);
         list.printList();
         System.out.println(list.isPalindrome());
         System.out.println(list.hasCycle());
