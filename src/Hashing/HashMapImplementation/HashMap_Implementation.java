@@ -1,5 +1,6 @@
 package Hashing.HashMapImplementation;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 
@@ -77,11 +78,75 @@ public class HashMap_Implementation {
                 rehash();
             }
         }
+
+        public boolean containsKey(K key) {
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi); // di = -1
+
+            if(di == -1) { // key doesn't exist
+                return false;
+            } else { // key exists
+                return true;
+            }
+        }
+
+        public V remove(K key) {
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi); // di = -1
+
+            if(di == -1) { // key doesn't exist
+                return null;
+            } else { // key exists
+                Node node = buckets[bi].remove(di);
+                n--;
+                return node.value;
+            }
+        }
+
+        public V get(K key) {
+            int bi = hashFunction(key);
+            int di = searchInLL(key, bi); // di = -1
+
+            if(di == -1) { // key doesn't exist
+                return null;
+            } else { // key exists
+                Node node = buckets[bi].get(di);
+                return node.value;
+            }
+        }
+
+        public ArrayList<K> keySet() {
+            ArrayList<K> keys = new ArrayList<>();
+
+            for(int i=0;i< buckets.length;i++){
+                LinkedList<Node> ll = buckets[i];
+                for(int j=0;j<ll.size();j++){
+                    Node node = ll.get(j);
+                    keys.add(node.key);
+                }
+            }
+            return keys;
+        }
+
+        public boolean isEmpty() {
+            return n == 0;
+        }
     }
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
         map.put("India", 190);
         map.put("China", 200);
         map.put("US", 50);
+        map.put("Nepal", 150);
+        map.put("Japan", 150);
+
+        ArrayList<String> keys = map.keySet();
+
+        for(int i=0;i<keys.size();i++){
+            System.out.println(keys.get(i) + " " + map.get(keys.get(i)));
+        }
+
+        map.remove("India");
+        System.out.println(map.get("India"));
     }
 }
