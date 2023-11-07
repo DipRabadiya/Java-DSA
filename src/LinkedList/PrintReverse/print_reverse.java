@@ -11,11 +11,12 @@ public class print_reverse {
         list.insert(40);
         list.insert(50);
         list.print();
-        list.printR();
-        list.countNode();
-        list.length();
-        list.getNNode(4);
-        list.getEndNode(2);
+//        list.printR();
+//        list.countNode();
+//        list.length();
+//        list.getNNode(4);
+//        list.getEndNode(2);
+        list.findMiddle();
     }
 }
 
@@ -156,6 +157,17 @@ class LinkedL1 {
                 temp = temp.next;
             }
         }
+    }
+
+    public void findMiddle(){
+        Node hare = head;
+        Node turtle = head;
+
+        while(hare.next != null && hare.next.next != null) {
+            hare = hare.next.next;
+            turtle = turtle.next;
+        }
+        System.out.println("Middle = " + turtle.data);
     }
 }
 

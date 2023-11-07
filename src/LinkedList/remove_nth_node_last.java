@@ -217,12 +217,13 @@ public class remove_nth_node_last {
         list.addLast(1);
         list.printList();
 
-        list.head=list.reverseRecursive(list.head);
-        list.printList();
-        list.printList();
-        list.removeNthFromEnd(5);
-        list.printList();
-        System.out.println(list.isPalindrome());
-        System.out.println(list.hasCycle());
+//        list.head=list.reverseRecursive(list.head);
+//        list.printList();
+//        list.printList();
+//        list.removeNthFromEnd(5);
+//        list.printList();
+//        System.out.println(list.isPalindrome());
+//        System.out.println(list.hasCycle());
+        System.out.println(list.findMiddle(list.head));
     }
 }
