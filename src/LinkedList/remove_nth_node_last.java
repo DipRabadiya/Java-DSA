@@ -208,13 +208,21 @@ public class remove_nth_node_last {
         return false;
     }
 
+
+
     public static void main(String[] args) {
         remove_nth_node_last list = new remove_nth_node_last();
         list.addLast(1);
+        list.addLast(1);
+        list.addLast(2);
+        list.addLast(2);
         list.addLast(2);
         list.addLast(3);
-        list.addLast(2);
-        list.addLast(1);
+        list.addLast(3);
+        list.addLast(3);
+        list.addLast(3);
+        list.addLast(4);
+        list.addLast(4);
         list.printList();
 
 //        list.head=list.reverseRecursive(list.head);
@@ -224,6 +232,7 @@ public class remove_nth_node_last {
 //        list.printList();
 //        System.out.println(list.isPalindrome());
 //        System.out.println(list.hasCycle());
-        System.out.println(list.findMiddle(list.head));
+        //System.out.println(list.findMiddle(list.head));
+
     }
 }

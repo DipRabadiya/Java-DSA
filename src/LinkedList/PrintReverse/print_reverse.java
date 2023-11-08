@@ -5,18 +5,26 @@ import java.util.*;
 public class print_reverse {
     public static void main(String[] args) {
         LinkedL1 list = new LinkedL1();
-        list.insert(10);
-        list.insert(20);
-        list.insert(30);
-        list.insert(40);
-        list.insert(50);
-        list.print();
+        list.insert(1);
+        list.insert(1);
+        list.insert(1);
+        list.insert(2);
+        list.insert(2);
+        list.insert(2);
+        list.insert(2);
+        list.insert(3);
+        list.insert(3);
+        list.insert(3);
+        list.insert(4);
+        //list.print();
 //        list.printR();
 //        list.countNode();
 //        list.length();
 //        list.getNNode(4);
 //        list.getEndNode(2);
-        list.findMiddle();
+//        list.findMiddle();
+        list.RemoveDuplicate();
+        list.print();
     }
 }
 
@@ -156,6 +164,28 @@ class LinkedL1 {
                 }
                 temp = temp.next;
             }
+        }
+    }
+
+    public void RemoveDuplicate() {
+        Node temp = head;
+        Node curr = head;
+        HashSet<Integer> set = new HashSet<>();
+
+        while (temp != null){
+            if(set.isEmpty()){
+                set.add(temp.data);
+            }else if (set.contains(temp.data)){
+                if(curr.next != null){
+                    curr.next = curr.next.next;
+                }else {
+                    curr.next = null;
+                }
+            }else {
+                set.add(temp.data);
+                curr = curr.next;
+            }
+            temp = temp.next;
         }
     }
 
