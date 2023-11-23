@@ -6,7 +6,6 @@ public class Zero_One {
         int n=arr.length;
         int left=0;
         int right=n-1;
-        for(int i=0;i<n;i++){
         while(left<right){
             if(arr[left]==0){
                 left++;
@@ -21,7 +20,6 @@ public class Zero_One {
             }
         }
         System.out.println(arr[i]);
-    }
     
 }
 }
