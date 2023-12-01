@@ -186,7 +186,6 @@ public class remove_nth_node_last {
             firstHalfStart = firstHalfStart.next;
             secondHalfStart = secondHalfStart.next;
         }
-
         return true;
     }
 

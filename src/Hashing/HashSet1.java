@@ -34,6 +34,7 @@ public class HashSet1 {
 
         //Iterator
         Iterator it = set.iterator();
+
         //next hasnext
         while(it.hasNext()) {
             System.out.println(it.next());

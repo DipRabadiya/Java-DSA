@@ -14,7 +14,6 @@ public class InsertionSort {
                     j--;
                 }
                 arr[j+1] = current;
-
             }
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i]+ " ");

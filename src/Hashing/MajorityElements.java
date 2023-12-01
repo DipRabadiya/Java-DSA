@@ -19,7 +19,7 @@ public class MajorityElements {
         }
     }
     public static void main(String[] args) {
-        int arr[] = {1,1,1,1,2,3,3,3,5};
+        int arr[] = {1,1,1,1,2,3,3,3,3,5};
         majorityElement(arr);
     }
 }

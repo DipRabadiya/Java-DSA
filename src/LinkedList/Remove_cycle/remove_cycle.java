@@ -110,9 +110,10 @@ public class remove_cycle {
         head.next = temp;
         head.next.next=new Node(3);
         head.next.next.next=temp;
+//        print();
+        //System.out.println(hasCycle());
+        removeCycle();
         print();
-        System.out.println(hasCycle());
-        // removeCycle();
         // System.out.println(hasCycle());
     }
 }

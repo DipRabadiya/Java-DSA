@@ -136,11 +136,11 @@ public class Reverse_linklist {
         list.addLast(2);
         list.addLast(3);
         list.addLast(4);
-        list.printList();
-
-        //list.reverseIterate();
         //list.printList();
-        list.reverseRecursive(list.head);
+
+        list.reverseIterate();
+        //list.printList();
+        //list.reverseRecursive(list.head);
         list.printList();
     }
 }
