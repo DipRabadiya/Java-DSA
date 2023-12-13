@@ -12,6 +12,6 @@ public class fibonacci {
         // return last + slast;
         } 
     public static void main(String[] args) {
-        System.out.println(fib(4));
+        System.out.println(fib(5));
     }
 }

@@ -20,7 +20,7 @@ public class factorial {
     }
     public static void main(String[] args) {
         int n=5;
-        int factorial=1;
+        //int factorial=1;
         // printFactorial(n,factorial);
         System.out.println(printFactorial(n));
     }

@@ -15,7 +15,7 @@ public class palindrome {
     }
 
     public static void main(String[] args) {
-        String s="madan";
+        String s="madam";
         System.out.println(rev(0,s));
     }
 }

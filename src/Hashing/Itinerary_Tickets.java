@@ -22,6 +22,7 @@ public class Itinerary_Tickets {
         tickets.put("Goa", "Chennai");
         tickets.put("Delhi", "Goa");
         tickets.put("Bengaluru", "Ahmedabad");
+        tickets.put("Ahmedabad","Ayodhya");
 
         String start=getStart(tickets);
 

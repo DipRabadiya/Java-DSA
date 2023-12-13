@@ -39,11 +39,12 @@ public class mergeSort {
         int mid = (low + high)/2;
         mergesort(arr, low, mid);
         mergesort(arr, mid+1, high);
+
         merge(arr, low, mid,high);
         return arr;
     }
     public static void main(String[] args) {
-        int arr[] ={3,1,2,4,1,5,2,6,4};
+        int arr[] ={-40,-1,3,1,2,4,1,5,2,6,4};
         int low =0;
         int high=arr.length-1;
         mergesort(arr, low, high);

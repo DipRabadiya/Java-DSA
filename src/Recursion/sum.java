@@ -23,6 +23,5 @@ public class sum {
         int sum=0;
         // printSum(n,sum);
         System.out.println(sum(n));
-        
     }
 }

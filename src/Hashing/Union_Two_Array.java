@@ -15,7 +15,7 @@ public class Union_Two_Array {
         return set.size();
     }
     public static void main(String[] args) {
-        int arr1[] = {7,3,9};
+        int arr1[] = {7,3,9,2,10};
         int arr2[] = {6,3,9,2,9,4};
         System.out.println(union(arr1,arr2));
     }

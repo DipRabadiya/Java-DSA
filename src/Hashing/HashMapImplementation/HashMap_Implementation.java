@@ -38,7 +38,7 @@ public class HashMap_Implementation {
 
             for(int i=0;i<ll.size(); i++) {
                 if(ll.get(i).key == key) {
-                    return i; // di
+                    return i; // di = -1
                 }
             }
             return -1;
@@ -139,14 +139,18 @@ public class HashMap_Implementation {
         map.put("US", 50);
         map.put("Nepal", 150);
         map.put("Japan", 150);
+        map.put("Canada", 300);
 
         ArrayList<String> keys = map.keySet();
 
+//        for(int i=0;i<keys.size();i++){
+//            System.out.println(keys.get(i) + " " + map.get(keys.get(i)));
+//        }
+
+        map.remove("India");
         for(int i=0;i<keys.size();i++){
             System.out.println(keys.get(i) + " " + map.get(keys.get(i)));
         }
-
-        map.remove("India");
-        System.out.println(map.get("India"));
+        System.out.println(map.get("Canada"));
     }
 }

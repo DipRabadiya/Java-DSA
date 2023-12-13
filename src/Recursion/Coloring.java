@@ -4,7 +4,7 @@ import java.util.*;
 public class Coloring {
     public static void main(String[] args) {
         int N = 4, M = 3;
-        List < Integer > [] G = new ArrayList[N];
+        List<Integer>[] G = new ArrayList[N];
         for (int i = 0; i < N; i++) {
             G[i] = new ArrayList < > ();
         }
