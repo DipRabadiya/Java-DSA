@@ -19,7 +19,7 @@ public class balance_parentheses {
                         || stack.peek() == '{' && s.charAt(i) == '}') {
                     stack.pop();
                 } else {
-                    System.out.println(false);
+                    System.out.println("false");
                     return;
                 }
             }

@@ -90,7 +90,7 @@ class DoublyLinkList {
     public void print() {
         Node temp = head;
         while (temp != null) {
-            System.out.println(temp.data + " ");
+            System.out.print(temp.data + "  ");
             temp = temp.next;
         }
     }

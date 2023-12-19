@@ -11,7 +11,7 @@ public class PreInPostOrderTraversal {
         root.left.right = new Node(4);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        //var num=0;
+
         Stack<Pair> st = new Stack<>();
         st.push(new Pair(root, 1));
 
@@ -34,7 +34,7 @@ public class PreInPostOrderTraversal {
                 }
             } else if(it.value == 2) {
                 in.add(it.key.data);
-                it.value ++;
+                it.value++;
                 st.push(it);
 
                 if(it.key.right != null) {

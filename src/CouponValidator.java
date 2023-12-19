@@ -22,14 +22,14 @@ public class CouponValidator {
         }
 
         // Criteria 4: Check coupon discount amount
-        String discountAmount = s.substring(7, s.length() - 1);
-        if (!discountAmount.matches("10|20|50|100|200|500|1000")) {
+        String discount = s.substring(7, s.length() - 1);
+        if (!discount.matches("10|20|50|100|200|500|1000")) {
             return s.charAt(s.length() - 1);
         }
 
         // Criteria 5: Check last character is an uppercase English letter
-        char lastChar = s.charAt(s.length() - 1);
-        if (!Character.isUpperCase(lastChar)) {
+        char last = s.charAt(s.length() - 1);
+        if (!Character.isUpperCase(last)) {
             return s.charAt(s.length() - 1);
         }
 

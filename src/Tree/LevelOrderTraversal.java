@@ -13,32 +13,48 @@ public class LevelOrderTraversal {
         root.left.right = new Node(5);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        //root.right.right.left = new Node(8);
+        root.right.right.left = new Node(8);
 
-        System.out.println(levelOrder(root));
+        //System.out.println(levelOrder(root));
+        levelOrder(root);
     }
 
-    private static List<List<Integer>> levelOrder(Node root) {
+    private static void levelOrder(Node root) {
         Queue<Node> queue = new LinkedList<Node>();
-        List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
-        if(root == null){
-            System.out.print(wrapList);
-        }
-        queue.offer(root);
+        queue.add(root);
         while(!queue.isEmpty()) {
-            int levelNum = queue.size();
-            List<Integer> subList = new LinkedList<Integer>();
-            for(int i=0;i<levelNum;i++){
-                if(queue.peek().left != null){
-                    queue.offer(queue.peek().left);
-                }
-                if(queue.peek().right != null){
-                    queue.offer(queue.peek().right);
-                }
-                subList.add(queue.poll().data);
+            if(queue.peek().left != null){
+                queue.offer(queue.peek().left);
             }
-            wrapList.add(subList);
+            if(queue.peek().right != null){
+                queue.offer(queue.peek().right);
+            }
+            System.out.print(queue.poll().data+" ");
         }
-        return wrapList;
     }
+
+
+//    private static List<List<Integer>> levelOrder(Node root) {
+//        Queue<Node> queue = new LinkedList<Node>();
+//        List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
+//        if(root == null){
+//            System.out.print(wrapList);
+//        }
+//        queue.offer(root);
+//        while(!queue.isEmpty()) {
+//            int levelNum = queue.size();
+//            List<Integer> subList = new LinkedList<Integer>();
+//            for(int i=0;i<levelNum;i++){
+//                if(queue.peek().left != null){
+//                    queue.offer(queue.peek().left);
+//                }
+//                if(queue.peek().right != null){
+//                    queue.offer(queue.peek().right);
+//                }
+//                subList.add(queue.poll().data);
+//            }
+//            wrapList.add(subList);
+//        }
+//        return wrapList;
+//    }
 }
