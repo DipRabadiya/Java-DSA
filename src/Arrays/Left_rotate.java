@@ -8,7 +8,7 @@ public class Left_rotate {
         int n= arr.length;
         int d=1;
         d = d%n;
-        for(int i=1;i<=d;i++){
+        for (int i = 1; i <= d; i++) {
             int t=arr[0];
             {
                 for(int j=0;j<n-1;j++){

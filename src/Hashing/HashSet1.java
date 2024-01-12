@@ -11,6 +11,7 @@ public class HashSet1 {
         set.add(2);
         set.add(3);
         set.add(1);
+        set.add(2);
 
         //search
         if(set.contains(1)){

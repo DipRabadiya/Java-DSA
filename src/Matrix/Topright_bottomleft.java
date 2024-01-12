@@ -9,5 +9,5 @@ public class Topright_bottomleft {
             System.out.print(mat[r][row-1-r]);
         }
         System.out.println();
-    } 
+    }
 }

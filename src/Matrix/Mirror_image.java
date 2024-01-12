@@ -11,6 +11,5 @@ public class Mirror_image {
             }
             System.out.println();
         }
-        // System.out.println();
     }
 }

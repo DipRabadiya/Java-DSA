@@ -23,7 +23,5 @@ public class Zero_One {
             }
         }
         System.out.println(Arrays.toString(arr));
-//    }
-    
-}
+    }
 }

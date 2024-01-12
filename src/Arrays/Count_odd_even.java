@@ -12,7 +12,7 @@ public class Count_odd_even {
                 odd++;
             }
         }
-        System.out.println(even);
-        System.out.println(odd);
+        System.out.println("Even: " + even);
+        System.out.println("Odd: " + odd);
     }     
 }

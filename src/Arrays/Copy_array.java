@@ -10,5 +10,5 @@ public class Copy_array {
             arr1[i]=arr[i];
             System.out.println(arr1[i]);
         }
-    }   
+    }
 }

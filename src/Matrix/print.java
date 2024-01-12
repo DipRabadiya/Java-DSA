@@ -10,6 +10,5 @@ public class print {
             }
             System.out.println();
         }
-        // System.out.println();
     }
 }

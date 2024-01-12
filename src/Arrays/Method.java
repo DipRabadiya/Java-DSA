@@ -50,5 +50,4 @@ public class Method {
         p++;
         return p;
     }
-    
 }

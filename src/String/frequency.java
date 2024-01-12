@@ -7,15 +7,13 @@ public class frequency {
         String s = "abcdabcabcd";
         int arr[] = new int[128];
 
-        for(int i=0; i<s.length(); i++){
+        for(int i=0;i<s.length();i++){
             int ascii = s.charAt(i);
             arr[ascii]+=1;
         }
-        //System.out.println(Arrays.toString(arr));
-        for(char i=0; i<arr.length; i++){
-            if(arr[i]> 0){
-                System.out.println(i + "-" + arr[i]);
-            }
+        for(char i=0;i<arr.length;i++){
+            if(arr[i]>0)
+            System.out.println(arr[i] + " " + i);
         }
     }
 }

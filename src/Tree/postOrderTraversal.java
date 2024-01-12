@@ -30,4 +30,3 @@ public class postOrderTraversal {
         System.out.println(postOrder);
     }
 }
-

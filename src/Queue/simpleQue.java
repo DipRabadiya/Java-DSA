@@ -22,7 +22,6 @@ public class simpleQue {
                 System.out.println("Full Queue");
                 return;
             }
-
             rear++;
             arr[rear] = data;
         }

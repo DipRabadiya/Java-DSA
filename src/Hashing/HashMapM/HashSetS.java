@@ -42,6 +42,7 @@ class help{
         }
         System.out.println();
     }
+
     public void subset(int[] arr2){
         for(int i=0; i< arr2.length; i++){
             if(!Hashset.contains(arr2[i])){
@@ -115,7 +116,6 @@ class help{
             }
         }
         System.out.println(maxKey);
-
     }
 
     public void arraysem(int[] arr1, int[] arr2) {

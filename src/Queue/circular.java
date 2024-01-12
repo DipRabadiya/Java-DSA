@@ -3,7 +3,7 @@ package Queue;
 import java.util.Arrays;
 
 public class circular {
-    static int arr[] = new int[5];
+    static int arr[] = new int[6];
     static int rear = -1;
     static int front = -1;
 
@@ -29,7 +29,7 @@ public class circular {
             return;
         }
         if (front == -1) {
-            front = 0;
+            front++;
         }
         rear = (rear + 1) % arr.length;
         arr[rear] = data;

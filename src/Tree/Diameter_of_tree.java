@@ -1,6 +1,12 @@
 package Tree;
 
 public class Diameter_of_tree {
+//                    1
+//            2               3
+//                        4       7
+//                    5               8
+//                6                       9
+
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);

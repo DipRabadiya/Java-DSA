@@ -15,6 +15,5 @@ public class Zig_zag {
             }
             System.out.println();
         }
-        // System.out.println();
     }
 }

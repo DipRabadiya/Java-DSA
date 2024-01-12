@@ -3,9 +3,9 @@ package Matrix;
 public class Search {
     public static void main(String args[]) {
         int[][] mat = { { 1, 4, 7, 9 },
-                { 10, 13, 16, 19 },
-                { 22, 25, 26, 29 },
-                { 35, 38, 40, 50 } };
+                    { 10, 13, 16, 19 },
+                    { 22, 25, 26, 29 },
+                    { 35, 38, 40, 50 } };
 
         int value = 40;
         int row = mat.length, col = mat[0].length;

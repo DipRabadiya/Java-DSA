@@ -8,9 +8,7 @@ public class sum {
         for(int r=0;r<row;r++){
             for(int c=0;c<col;c++){
                 sum += mat[r][c];
-                // System.out.print(mat[r][c]);
             }
-            // System.out.println();
         }
         System.out.println(sum);
     }

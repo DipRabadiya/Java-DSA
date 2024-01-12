@@ -199,5 +199,4 @@ class SalarySlip {
 		}
 		Print(Max1MonthWiseSalary,Max2MonthWiseSalary);
 	}
-		
 }

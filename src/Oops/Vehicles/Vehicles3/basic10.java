@@ -65,7 +65,7 @@ public class basic10 {
 			break;
 		case 3:
 			System.out.println("1.DECREASE SPEED");
-			System.out.println("2.STOP BICYCLE");
+			System.out.println("2.STOP Vehicle");
 			System.out.println("Choice ::");
 			int opt = sc.nextInt();
 			switch (opt) {
@@ -94,7 +94,6 @@ public class basic10 {
 		}
 		basic10.SecondChoice(obj);
 	}
-
 }
 
 interface Vehicle1 {
@@ -142,7 +141,6 @@ class Bicycle1 implements Vehicle1{
 		this.speed = 0;
 	}
 }
-
 
 class Bike1 implements Vehicle1{
 	int speed = 0;
@@ -216,5 +214,4 @@ class Car1 implements Vehicle1{
 		this.gear = 0;
 		this.speed = 0;
 	}
-	
 }

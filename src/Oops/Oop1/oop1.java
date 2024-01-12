@@ -6,9 +6,7 @@ public class oop1 {
     // public void area(){
     //     System.out.println("Display area");
     // }
-    /**
-     * 
-     */
+
     public static void main(String[] args) {
         Shape s1 = new Shape();
         s1.area();

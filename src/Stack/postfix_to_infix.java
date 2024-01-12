@@ -7,7 +7,7 @@ public class postfix_to_infix {
         String prefix = "abfc++c/";
         Stack<String> stack = new Stack<>();
 
-        for (int i =0; i<prefix.length(); i++) {
+        for (int i = 0; i < prefix.length(); i++) {
             if (prefix.charAt(i) == '+' || prefix.charAt(i) == '-' || prefix.charAt(i) == '*' || prefix.charAt(i) == '/') {
                 String first = stack.pop();
                 String second = stack.pop();

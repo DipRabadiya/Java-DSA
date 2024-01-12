@@ -23,7 +23,7 @@ public class circualar_queue {
         }
 
         public static void add(int data) {
-            if (isFull()) {
+            if(isFull()) {
                 System.out.println("Full Queue");
                 return;
             }

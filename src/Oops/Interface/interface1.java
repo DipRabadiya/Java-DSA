@@ -6,7 +6,7 @@ interface Animal {
 }
 
 interface Herbivore extends Animal {
-    
+
 }
 
 class Horse implements Animal,Herbivore {

@@ -20,6 +20,6 @@ public class reverse_Kth_item {
         while (!extraQueue.isEmpty()) {
             queue.addFirst(extraQueue.removeFirst());
         }
-        System.out.println("before update :" + queue);
+        System.out.println("after update :" + queue);
     }
 }

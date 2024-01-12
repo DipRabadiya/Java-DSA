@@ -2,7 +2,7 @@ package Oops.Dog;
 
 public class basic11 {
     public static void main(String[] args) {
-        Dog d1 = new Dog("Bull Dog","Black");
+        Dog d1 = new Dog("Bull Dog ","Black");
         System.out.println(d1.getName() + d1.getColor());
         d1.setName("Max");
         d1.setColor("white");

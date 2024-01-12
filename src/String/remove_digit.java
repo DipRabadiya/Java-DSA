@@ -6,7 +6,7 @@ public class remove_digit {
         String ans = "";
 
         for(int i=0; i<s.length(); i++){
-            if(!Character.isDigit(s.charAt(i))){ 
+            if(!Character.isDigit(s.charAt(i))) {
                 ans += s.charAt(i);
             }
         }

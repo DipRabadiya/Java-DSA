@@ -21,7 +21,7 @@ public class stack_using_2queue {
         }
 
         public int pop() {
-            if (isEmpty()) {
+            if(isEmpty()) {
                 System.out.println("Queue is Empty");
                 return -1;
             }
@@ -71,10 +71,10 @@ public class stack_using_2queue {
         Stack s = new Stack();
         s.push(1);
         s.push(2);
+        s.push(3);
         s.pop();
-        s.pop();
-        s.isEmpty();
 
+        System.out.println(s.peek());
         while (!s.isEmpty()) {
             System.out.println(s.pop());
         }

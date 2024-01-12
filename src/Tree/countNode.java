@@ -9,18 +9,13 @@ public class countNode {
         root.left.right = new Node(8);
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        int n=4;
-        nodeCount(root,n);
+
+        System.out.println(nodeCount(root));
     }
-    public static int nodeCount(Node root, int n) {
+    public static int nodeCount(Node root) {
         if (root == null) {
-            return n;
+            return 0;
         }
-        if(root.data == n){
-            System.out.println("data found");
-        }
-        int lh = nodeCount(root.left,n);
-        int rh = nodeCount(root.right,n);
-        return n;
+        return 1 + nodeCount(root.left) + nodeCount(root.right);
     }
 }
