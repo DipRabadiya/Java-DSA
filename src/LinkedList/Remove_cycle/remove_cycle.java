@@ -9,14 +9,10 @@ public class remove_cycle {
         if (head == null) {
             head = node;
             temp = node;
-            // tail = node;
         } else {
             temp.next = node;
             temp = node;
             temp.next = head;
-            // tail.next = node;
-            // tail = node;
-            // tail.next = head;
         }
     }
 
@@ -73,6 +69,15 @@ public class remove_cycle {
         }
         return false;
     }
+    public static void countNode() {
+        Node temp = head;
+        int count = 0;
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        System.out.println("Count nodes: " + count);
+    }
 
     public static void removeCycle() {
         //detect cycle
@@ -113,8 +118,9 @@ public class remove_cycle {
 //        print();
         //System.out.println(hasCycle());
         removeCycle();
+        countNode();
         print();
-        // System.out.println(hasCycle());
+
     }
 }
 

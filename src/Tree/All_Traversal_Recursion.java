@@ -6,13 +6,13 @@ import java.util.Queue;
 
 public class All_Traversal_Recursion {
     public static void main(String[] args) {
-        Node root = new Node(45);
-        root.left = new Node(35);
-        root.right = new Node(40);
-        root.left.left = new Node(55);
-        root.left.right = new Node(30);
-        root.right.left = new Node(50);
-        root.right.right = new Node(32);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
+        root.right.left = new Node(6);
+        root.right.right = new Node(7);
         System.out.print("Preorder traversal of binary tree is= ");
         preOrderTraversal(root);
         System.out.println();

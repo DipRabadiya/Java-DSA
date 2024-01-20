@@ -1,4 +1,6 @@
 package LinkedList;
+//
+//import LinkedList.Remove_cycle.Node;
 
 import java.util.LinkedList;
 
@@ -222,7 +224,12 @@ public class remove_nth_node_last {
         list.addLast(3);
         list.addLast(4);
         list.addLast(4);
-        list.printList();
+//        head = new LinkedList.Remove_cycle.Node(1);
+//        LinkedList.Remove_cycle.Node temp = new LinkedList.Remove_cycle.Node(2);
+//        head.next = temp;
+//        head.next.next=new LinkedList.Remove_cycle.Node(3);
+//        head.next.next.next=temp;
+//        list.printList();
 
 //        list.head=list.reverseRecursive(list.head);
 //        list.printList();
@@ -230,7 +237,7 @@ public class remove_nth_node_last {
 //        list.removeNthFromEnd(5);
 //        list.printList();
 //        System.out.println(list.isPalindrome());
-//        System.out.println(list.hasCycle());
+        System.out.println(list.hasCycle());
         //System.out.println(list.findMiddle(list.head));
 
     }

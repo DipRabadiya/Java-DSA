@@ -33,7 +33,6 @@ public class LevelOrderTraversal {
         }
     }
 
-
 //    private static List<List<Integer>> levelOrder(Node root) {
 //        Queue<Node> queue = new LinkedList<Node>();
 //        List<List<Integer>> wrapList = new LinkedList<List<Integer>>();

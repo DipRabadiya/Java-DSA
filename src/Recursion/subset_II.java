@@ -14,12 +14,10 @@ public class subset_II {
             }
     }
     public static void main(String[] args) {
-        int arr[] ={1, 2, 2, 2, 3, 3};
+        int arr[] ={3,1,2,4};
         Arrays.sort(arr);
         List<List<Integer>> ansList = new ArrayList<>();
         findSubsets(0, arr, new ArrayList<>(), ansList);
         System.out.println(ansList);
     }
-
-
 }

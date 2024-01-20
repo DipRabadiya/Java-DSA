@@ -22,9 +22,9 @@ public class subsequnces {
         subsequnces(ind+1,ds,arr,n);
     }
     public static void main(String[] args) {
-        int[] arr ={3,1,2};
+        int[] arr ={3,1,2,4};
         ArrayList<Integer> ds=new ArrayList<Integer>();
-        int n=3;
+        int n=arr.length;
         subsequnces(0,ds,arr,n);
     }
 }

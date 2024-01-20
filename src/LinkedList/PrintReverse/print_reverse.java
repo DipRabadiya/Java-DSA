@@ -6,24 +6,26 @@ public class print_reverse {
     public static void main(String[] args) {
         LinkedL1 list = new LinkedL1();
         list.insert(1);
-        list.insert(1);
-        list.insert(1);
         list.insert(2);
-        list.insert(2);
-        list.insert(2);
-        list.insert(2);
-        list.insert(3);
-        list.insert(3);
         list.insert(3);
         list.insert(4);
-        //list.print();
+        list.insert(4);
+//        list.print();
+//        System.out.println();
+//        list.printR();
+        list.RemoveDuplicate();
+//        list.print();
 //        list.printR();
 //        list.countNode();
 //        list.length();
 //        list.getNNode(4);
 //        list.getEndNode(2);
 //        list.findMiddle();
-        list.RemoveDuplicate();
+//        list.RemoveDuplicate();
+//        list.print();
+//        System.out.println(list.hasCycle());
+
+//        list.printR1();
         list.print();
     }
 }
@@ -34,9 +36,27 @@ class LinkedL1 {
 
     int totalNode = 0;
 
-    LinkedL1() {
-        head = null;
-        tail = null;
+//    LinkedL1() {
+//        head = null;
+//        tail = null;
+//    }
+
+    public boolean hasCycle() {
+        if (head == null) {
+            return false;
+        }
+        Node hare = head;
+        Node turtle = head;
+
+        while (hare != null && hare.next != null) {
+            hare = hare.next.next;
+            turtle = turtle.next;
+
+            if (hare == turtle) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public void getNNode(int value) {
@@ -144,6 +164,20 @@ class LinkedL1 {
             stack.pop();
         }
         System.out.println();
+    }
+
+    public void printR1(){
+        Node prev = null;
+        Node temp=head;
+        Node next=null;
+
+        while(temp != null){
+            next = temp.next;
+            temp.next=prev;
+            prev=temp;
+            temp=next;
+        }
+        head = prev;
     }
 
     public void delete(int data) {

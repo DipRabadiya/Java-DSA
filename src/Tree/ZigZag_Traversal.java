@@ -18,36 +18,25 @@ public class ZigZag_Traversal {
         Deque<Node> dq = new LinkedList<>();
         dq.add(root);
         boolean isRev = false;
-        while (!dq.isEmpty()){
-            if (isRev){
+        while(!dq.isEmpty()){
+            if(isRev){
                 int size = dq.size();
-                while (size > 0){
+                while(size > 0){
                     Node node = dq.removeLast();
                     System.out.print(node.data+" ");
-
-                    if (node.right!=null){
-                        dq.addFirst(node.right);
-                    }
-                    if (node.left!=null){
-                        dq.addFirst(node.left);
-                    }
+                    if (node.right!=null) dq.addFirst(node.right);
+                    if (node.left!=null) dq.addFirst(node.left);
                     size--;
                 }
                 System.out.println();
                 isRev = !isRev;
             }else {
                 int size = dq.size();
-
-                while (size > 0){
+                while(size > 0){
                     Node node = dq.removeFirst();
                     System.out.print(node.data+" ");
-
-                    if (node.left!=null){
-                        dq.addLast(node.left);
-                    }
-                    if (node.right!=null){
-                        dq.addLast(node.right);
-                    }
+                    if (node.left!=null) dq.addLast(node.left);
+                    if (node.right!=null) dq.addLast(node.right);
                     size--;
                 }
                 System.out.println();

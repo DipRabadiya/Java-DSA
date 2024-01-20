@@ -4,7 +4,7 @@ public class binaryTree {
     Node root;
     public static void main(String[] args) {
         binaryTree tree = new binaryTree();
-        int arr[] = { 1, 2, 3};
+        int arr[] = { 1, 2, 3, 4, 5, 6, 7};
         tree.root = tree.insertLevelOrder(arr, 0);
         tree.inOrder(tree.root);
     }
@@ -14,9 +14,7 @@ public class binaryTree {
         Node root = null;
         if (i < arr.length) {
             root = new Node(arr[i]);
-
             root.left = insertLevelOrder(arr, 2 * i + 1);
-
             root.right = insertLevelOrder(arr, 2 * i + 2);
         }
         return root;
