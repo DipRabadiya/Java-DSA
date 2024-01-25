@@ -24,7 +24,7 @@ public class postOrderTraversal {
             if(root.left != null) st1.push(root.left);
             if(root.right != null) st1.push(root.right);
         }
-        while(!st2.isEmpty()){
+        while(!st2.isEmpty()) {
             postOrder.add(st2.pop().data);
         }
         System.out.println(postOrder);

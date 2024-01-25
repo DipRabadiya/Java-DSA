@@ -1,3 +1,5 @@
+package LRU_cache;
+
 import java.util.*;
 public class LRU {
     public static void main(String[] args) {
@@ -5,12 +7,9 @@ public class LRU {
         lru.add(1);
         lru.add(2);
         lru.add(3);
-        lru.add(2);
         lru.add(4);
         lru.add(5);
-        lru.add(5);
         lru.add(6);
-        lru.add(1);
         lru.print();
     }
 }

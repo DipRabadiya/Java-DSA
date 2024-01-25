@@ -13,7 +13,7 @@ public class countNode {
         System.out.println(nodeCount(root));
     }
     public static int nodeCount(Node root) {
-        if (root == null) {
+        if(root == null) {
             return 0;
         }
         return 1 + nodeCount(root.left) + nodeCount(root.right);
