@@ -8,15 +8,16 @@ public class HashMap1 {
         map.put("India", 120);
         map.put("China", 150);
         map.put("US", 150);
+        map.put("India",200);
         //map.put("US", 50);
 
         System.out.println(map);
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            if (entry.getValue().equals(entry.getValue())) {
-                System.out.println(entry.getKey());
-                return;
-            }
-        }
+//        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+//            if (entry.getValue().equals(entry.getValue())) {
+//                System.out.println(entry.getKey());
+//                return;
+//            }
+//        }
 
 //        //update
 //        map.put("China", 480);

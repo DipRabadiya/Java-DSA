@@ -26,7 +26,7 @@ public class permutation_II {
         arr[j]=t;
     }
     public static void main(String[] args) {
-        int[] arr = {3,1,2,4};
+        int[] arr = {1,2,3};
         List<List<Integer>> ans = new ArrayList<>();
         recurPermutes(0, arr, ans);
         System.out.println(ans);

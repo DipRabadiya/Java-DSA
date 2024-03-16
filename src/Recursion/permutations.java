@@ -18,7 +18,7 @@ public class permutations {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {3,1,2,4};
+        int[] arr = {1,2,3};
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> ds = new ArrayList<>();
         boolean freq[] =  new boolean[arr.length];
