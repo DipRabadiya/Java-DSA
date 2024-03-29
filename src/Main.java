@@ -1,28 +1,55 @@
-public class Main {
-    public static void main(String[] s) {
-//        int marks1[];
-        int marks1[] = new int[3];
-        int marks2[]=new int[3];
-        int[] marks3 = new int[3];
-        int marks4[]={50, 60, 70};
-        int[] marks5 = {70, 80, 90};
+//class Dog{
+//    public void bark(){
+//        System.out.println("woof ");
+//    }
+//}
+//class Hound extends Dog {
+//    public void sniff() {
+//        System.out.println("sniff ");
+//    }
+//    public void bark() {
+//        System.out.println("bowl");
+//    }
+//}
+//public class Main{
+//    public static void main(String args[]){
+//        Dog dog = new Hound();
+//        dog.bark();
+//    }
+//}
 
-        System.out.print("Array marks1:\t");
-        display(marks1,3);
-        System.out.print("Array marks2:\t");
-        display(marks2,3);
-        System.out.print("Array marks3:\t");
-        display(marks3 ,3);
-        System.out.print("Array marks4:\t");
-        display(marks4,3);
-        System.out.print("Array marks5:\t");
-        display(marks5,3);
+class Shape {
+    void draw() {
+        System.out.println("drawing...");
     }
+}
 
-    static void display(int arr[], int size) {
-        for (int i = 0; i < size; i++) {
-            System.out.print(arr[i] + "\t");
-        }
-        System.out.println();
+class Rectangle extends Shape {
+    void draw() {
+        System.out.println("drawing rectangle...");
+    }
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("drawing circle...");
+    }
+}
+
+class Triangle extends Shape {
+    void draw() {
+        System.out.println("drawing triangle...");
+    }
+}
+
+public class Main {
+    public static void main(String args[]) {
+        Shape s;
+        s = new Rectangle();
+        s.draw();
+        s = new Circle();
+        s.draw();
+        s = new Triangle();
+        s.draw();
     }
 }

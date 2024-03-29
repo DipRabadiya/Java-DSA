@@ -3,7 +3,7 @@ package Recursion;
 public class primeNumber {
 
     public static void main(String[] args) {
-        int num=3;
+        int num=32;
         if(CheckPrime(2,num)==0) {
             System.out.println("It is a Prime Number.");
         }else {

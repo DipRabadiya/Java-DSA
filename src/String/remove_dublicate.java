@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class remove_dublicate {
     public static void main(String[] args) {
-        String name = "DipDip";
+        String name = "DipDipDM";
         char str[] = name.toCharArray();
         int len = str.length;
         removeDuplicate(str, len);

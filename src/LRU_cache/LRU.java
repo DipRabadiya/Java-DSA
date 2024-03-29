@@ -9,7 +9,9 @@ public class LRU {
         lru.add(3);
         lru.add(4);
         lru.add(5);
+        lru.add(1);
         lru.add(6);
+        lru.add(1);
         lru.print();
     }
 }

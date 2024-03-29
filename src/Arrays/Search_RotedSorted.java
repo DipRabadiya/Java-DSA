@@ -3,7 +3,7 @@ package Arrays;
 public class Search_RotedSorted {
     public static void main(String[] args) {
         int[] arr = {4,5,6,1,2,3};
-        int n=5;
+        int n=7;
         int i=0;
         int j=arr.length-1;
         while (i<=j){

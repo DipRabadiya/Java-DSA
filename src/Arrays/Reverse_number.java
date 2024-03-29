@@ -4,7 +4,7 @@ public class Reverse_number {
     public static void main(String args[]){
         int n=5055;
         int rev=0;
-        int r=0;
+        int r;
 
         while(n!=0){
             r=n%10;

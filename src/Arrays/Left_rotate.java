@@ -6,7 +6,7 @@ public class Left_rotate {
     public static void main(String args[]){
         int arr[]= {1,2,3,4,5,6};
         int n= arr.length;
-        int d=1;
+        int d=2;
         d = d%n;
         for (int i = 1; i <= d; i++) {
             int t=arr[0];

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class frequentElement {
     public static void main(String[] args) {
-        int[] arr = {1,1,1,1,2,2,2,2,3,4,5,6};
+        int[] arr = {1,1,1,1,2,2,2,2,2,3,4,5,6};
         frequent_element(arr);
     }
     public static void frequent_element(int[] arr) {

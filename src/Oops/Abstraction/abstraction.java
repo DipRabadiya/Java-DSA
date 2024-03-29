@@ -12,25 +12,28 @@ public class abstraction {
 
 abstract class Animal {
     abstract void walk();
-    Animal(){
+
+    Animal() {
         System.out.println("You are creating a new animal");
     }
-    public void eat(){
+
+    public void eat() {
         System.out.println("Animal eats");
-    }  
+    }
 }
 
-class Horse extends Animal{
+class Horse extends Animal {
     Horse() {
         System.out.println("Created a Horse");
     }
+
     public void walk() {
         System.out.println("walks on 4 legs");
     }
 }
 
-class Chicken extends Animal{
-    public void walk(){
+class Chicken extends Animal {
+    public void walk() {
         System.out.println("walks on 2 legs");
     }
 }

@@ -1,7 +1,7 @@
 package String;
 
 public class mergeString {
-    public static void main(Strings[] args) {
+    public static void main(String[] args) {
         String s = "Dpaaia";
         String s1 = "iRbdy";
         String s2 = "";

@@ -9,10 +9,6 @@ public class equalORnot {
         HashMap<Integer,Integer> map = new HashMap<>();
 
         int count = 0;
-        if(arr1.length != arr2.length){
-            System.out.println(false);
-            return;
-        }
         for(int i : arr1){
             map.put(i,map.getOrDefault(i,0) + 1);
         }

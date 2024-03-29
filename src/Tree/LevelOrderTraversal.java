@@ -19,7 +19,7 @@ public class LevelOrderTraversal {
         levelOrder(root);
     }
 
-    private static void levelOrder(Node root) {
+    public static void levelOrder(Node root) {
         Queue<Node> queue = new LinkedList<Node>();
         queue.add(root);
         while(!queue.isEmpty()) {

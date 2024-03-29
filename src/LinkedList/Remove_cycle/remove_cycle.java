@@ -16,7 +16,7 @@ public class remove_cycle {
         }
     }
 
-    public int countLoop(Node p) {
+    public static int countLoop(Node p) {
         Node fast = p;
         Node slow = p;
         Boolean check = false;
@@ -44,12 +44,13 @@ public class remove_cycle {
 
     public static  void print() {
         Node temp = head;
-        do {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        } while (temp != head);
-
-        System.out.print(temp.next.data + " ");
+        if(head != null) {
+            do {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            } while (temp != head);
+        }
+//        System.out.print(temp.next.data + " ");
     }
 
     public static boolean hasCycle() {
@@ -116,11 +117,12 @@ public class remove_cycle {
         head.next.next=new Node(3);
         head.next.next.next=temp;
 //        print();
-        //System.out.println(hasCycle());
+        System.out.println(hasCycle());
         removeCycle();
-        countNode();
-        print();
-
+        System.out.println(hasCycle());
+//        System.out.println(countLoop(head));
+//        countNode();
+//        print();
     }
 }
 
